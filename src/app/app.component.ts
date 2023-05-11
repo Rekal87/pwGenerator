@@ -18,7 +18,7 @@ export class AppComponent {
     const parsedValue = parseInt(this.length);
 
     if (!isNaN(parsedValue)) {
-      this.length = parsedValue;
+      length = parsedValue;
     }
   }
 
@@ -51,7 +51,7 @@ export class AppComponent {
     }
 
     let generatedPassword = '';
-    for (let i = 0; i < this.length; i++) {
+    for (let i = 0; i < length; i++) {
       const index = Math.floor(Math.random() * validChars.length);
       generatedPassword += validChars[index];
     }
